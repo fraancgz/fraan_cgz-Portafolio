@@ -1,0 +1,298 @@
+/* CONFIGURACIÓN GENERAL Y VARIABLES */
+:root {
+    --ing-blue: #003366;
+    --ing-light-blue: #e6f0ff;
+    --ing-accent: #007bff;
+    --cv-border: #dee2e6;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+/* Reset de links: Todos en gris suave */
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Estilo para los links normales cuando están activos */
+.navbar-nav .nav-link.active:not(.btn-primary) {
+    color: var(--ing-light-blue) !important;
+    border-bottom: 2px solid var(--ing-light-blue) !important;
+    font-weight: 700;
+}
+
+/* Estilo para el botón de contacto cuando está activo */
+/* Si el contacto está activo */
+.navbar-nav .nav-link.btn-primary.active {
+    background-color: var(--ing-blue) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+}
+
+/* Evita problemas visuales con los bordes: si hay un active, los que no son active pierden el borde */
+.navbar-nav .nav-link:not(.active) {
+    border-bottom: 2px solid transparent !important;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+#inicio {
+    scroll-margin-top: 0 !important;
+}
+
+/* HERO / PORTADA */
+.hero-parallax {
+    background-image: url('/img/heroParalax.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fw-black { font-weight: 900; }
+
+/* HABILIDADES / COMPETENCIAS (STACK) */
+.tech-card {
+    background: #ffffff;
+    border: 1px solid var(--cv-border);
+    border-top: 4px solid var(--ing-blue);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+}
+
+.tech-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: var(--ing-light-blue);
+    color: var(--ing-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tech-list li {
+    padding: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+    border-bottom: 1px dotted #eee;
+}
+
+.tech-list li::before {
+    content: "▹";
+    color: var(--ing-accent);
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+
+/* Configuración Parallax para el Stack */
+.parallax-stack {
+    background-image: url('/img/stackParalax.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Capa de oscuridad personalizada */
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 15, 30, 0.85);
+    z-index: 1;
+}
+
+/* Efecto Glassmorphism para las tarjetas */
+.bg-white-95 {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(4px);
+    border: none;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 991px) {
+    .parallax-stack {
+        background-attachment: scroll;
+    }
+}
+
+/* SECCIÓN PROYECTOS */
+.project-card {
+    border-radius: 20px;
+    background: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-img-container {
+    position: relative;
+    height: 250px;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 51, 102, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay { opacity: 1; }
+
+/* FORMULARIO DE CONTACTO */
+/* Contenedor principal estilo ventana */
+.terminal-window {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.terminal-header {
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #111;
+}
+
+/* Botones de la ventana */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+/* Tipografía y Colores JSON */
+.terminal-body {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.code-json { color: #d4d4d4; } /* Texto base */
+.token.property { color: #9cdcfe; } /* Claves (azul claro) */
+.token.string { color: #ce9178; } /* Valores string (naranja/ocre) */
+.token.punctuation { color: #ffd700; } /* Brackets y llaves (oro) */
+.token.boolean { color: #569cd6; } /* Booleans (azul) */
+
+/* Estilo para los links dentro del código */
+.code-link {
+    color: #ce9178; 
+    text-decoration: underline dotted;
+    transition: all 0.3s ease;
+}
+
+.code-link:hover {
+    color: #4ec9b0; /* Cambia a turquesa al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* CONFIGURACIÓN PARALLAX CONTACTO */
+.parallax-contact {
+    background-image: url('/img/contactParalax.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 26, 51, 0.85);
+    z-index: 1;
+}
+
+
+/* FIX TEXTAREA Y BORDES */
+#floatingMessage {
+    resize: none;         /* Bloquea el redimensionado manual */
+    height: 120px;        /* Altura fija para ~5 líneas */
+    overflow-y: auto;     /* Scroll interno si excede el espacio */
+    border-left: 1px solid #dee2e6 !important; /* Asegura el cierre del borde con el icono */
+}
+
+/* GLASSMORPHISM FORMULARIO */
+.bg-white-95 {
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(10px);
+}
+
+.custom-input:focus {
+    background-color: #fff;
+    border-color: #004a99;
+    box-shadow: 0 0 0 0.25rem rgba(0, 74, 153, 0.1);
+}
+
+.input-group:focus-within .input-group-text {
+    border-color: #004a99;
+    background-color: #e6f0ff !important;
+    color: #004a99 !important;
+}
+
+.input-group:focus-within .custom-input {
+    border-color: #004a99 !important;
+}
+
+
+.custom-input {
+    border-left: 1px solid #dee2e6 !important; /* Forzamos el borde izquierdo para que cierre el cuadro */
+}
+
+/* Al estar en focus, el borde debe cambiar de color parejo */
+.input-group:focus-within .input-group-text,
+.input-group:focus-within .custom-input {
+    border-color: var(--ing-blue) !important;
+}
+
+/* FOOTER */
+footer {
+    background-color: #001a33;
+    color: #e6f0ff;
+}
+
+.footer-link {
+    color: #a3c2e0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover { color: #ffffff; }
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .hero-parallax { background-attachment: scroll; }
+    .display-1 { font-size: 3.2rem; }
+    .project-img-container { height: 200px; }
+}

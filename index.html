@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco | Full Stack Developer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#home">
+                <span class="text-primary">&lt;</span>FC<span class="text-primary">/&gt;</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" id="#home" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" id="#about" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" id="#stack" href="#stack">Stack</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" id="#proyects" href="#proyects">Proyectos</a></li>
+                    <li class="nav-item ms-lg-4">
+                        <a class="nav-link nav-contact-btn" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-parallax d-flex align-items-center position-relative vh-100 overflow-hidden">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75" style="z-index: 1;"></div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row justify-content-start">
+                <div class="col-12 col-lg-8 text-white">
+                    <p class="badge rounded-pill bg-primary px-3 py-2 text-uppercase mb-4">
+                        <i class="bi bi-patch-check-fill me-1"></i> Ingeniero en Informática
+                    </p>
+                    <h1 class="display-1 fw-black mb-3 ">
+                        Construyendo el <span id="typewriter-hero" class="text-primary typewriter-cursor"></span>
+                    </h1>
+                    <p class="lead fs-3 mb-5 text-light opacity-75">
+                        Desarrollador Full Stack en Buin. Especialista en arquitecturas escalables y eficiencia de
+                        código.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#proyects" class="btn btn-primary btn-lg px-5 py-3 fs-5 fw-bold shadow">Ver
+                            Proyectos</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-5 py-3 fs-5 fw-bold">Sobre Mí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5 my-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-5">
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary rounded-4 shadow-sm"
+                            style="z-index: -1; transform: rotate(3deg);"></div>
+                        <img src="https://picsum.photos/id/64/800/800" class="img-fluid rounded-4 shadow-lg"
+                            alt="Francisco">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <h6 class="text-primary fw-bold text-uppercase">Trayectoria</h6>
+                    <h2 class="display-4 fw-bold mb-4">Ingeniero apasionado por la eficiencia</h2>
+                    <p class="lead text-secondary mb-4">
+                        Soy un Ingeniero en Informática con un enfoque sólido en el desarrollo de aplicaciones web. Mi
+                        objetivo es transformar problemas complejos en soluciones técnicas elegantes.
+                    </p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="card h-100 border-0 bg-light p-3">
+                                <div class="card-body text-center text-sm-start">
+                                    <i class="bi bi-layers-fill fs-1 text-primary mb-2"></i>
+                                    <h5 class="fw-bold">Arquitectura</h5>
+                                    <ul class="list-unstyled small text-muted">
+                                        <li><i class="bi bi-check2 text-primary me-2"></i>Patrón MVC</li>
+                                        <li><i class="bi bi-check2 text-primary me-2"></i>APIs RESTful</li>
+                                        <li><i class="bi bi-check2 text-primary me-2"></i>Modelado Relacional</li>
+                                        <li><i class="bi bi-check2 text-primary me-2"></i>Código Modular</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card h-100 border-0 bg-light p-3">
+                                <div class="card-body text-center text-sm-start">
+                                    <i class="bi bi-rocket-takeoff-fill fs-1 text-primary mb-2"></i>
+                                    <h5 class="fw-bold">Performance</h5>
+                                    <p class="small text-muted mb-0">Optimización de tiempos de respuesta mediante el
+                                        manejo eficiente del Event Loop de Node.js. Me enfoco en escribir código
+                                        asíncrono no bloqueante y en la optimización de consultas a bases de datos
+                                        mediante el uso de índices y modelos eficientes en Sequelize, garantizando
+                                        aplicaciones fluidas y escalables..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 border-start border-primary border-4 bg-light rounded-end">
+                        <p class="fst-italic mb-0 text-muted">
+                            "La disciplina del running de larga distancia la llevo al código: constancia, estrategia y
+                            atención al detalle en cada kilómetro y en cada línea de código."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="parallax-stack position-relative py-5">
+        <div class="parallax-overlay"></div>
+
+        <div class="container py-5 position-relative" style="z-index: 2;">
+            <div class="row mb-5 text-center reveal  reveal-up">
+                <div class="col-lg-8 mx-auto reveal-content">
+                    <h6 class="text-primary fw-bold text-uppercase ls-2">Ingeniería & Desarrollo</h6>
+                    <h2 class="display-5 fw-bold text-white">Ecosistema de Competencias</h2>
+                    <p class="lead text-light opacity-75">Análisis, diseño y construcción de software basado en
+                        estándares profesionales.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 reveal reveal-left">
+                    <div class="tech-card p-4 shadow-sm bg-white-95 reveal-content">
+                        <div class="icon-box">
+                            <i class="bi bi-cpu-fill fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold">Backend & Logic</h5>
+                        <ul class="tech-list">
+                            <li>Node.js / Express</li>
+                            <li>Sequelize (ORM)</li>
+                            <li>PHP / CodeIgniter</li>
+                            <li>Arquitectura MVC</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 reveal reveal-up">
+                    <div class="tech-card p-4 shadow-sm bg-white-95 reveal-content">
+                        <div class="icon-box">
+                            <i class="bi bi-database-fill-lock fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold">Data Management</h5>
+                        <ul class="tech-list">
+                            <li>Oracle DB (SQL)</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL Server</li>
+                            <li>Modelado de Datos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 reveal reveal-up">
+                    <div class="tech-card p-4 shadow-sm bg-white-95 reveal-content">
+                        <div class="icon-box">
+                            <i class="bi bi-shield-check fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold">Quality Assurance</h5>
+                        <ul class="tech-list">
+                            <li>Unit Testing (Jest)</li>
+                            <li>API Testing (Postman)</li>
+                            <li>Documentación</li>
+                            <li>Debugging</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 reveal reveal-right">
+                    <div class="tech-card p-4 shadow-sm bg-white-95 reveal-content">
+                        <div class="icon-box">
+                            <i class="bi bi-command fs-3"></i>
+                        </div>
+                        <h5 class="fw-bold">Frontend & DevOps Entry</h5>
+                        <ul class="tech-list">
+                            <li>JavaScript ES6+</li>
+                            <li>Bootstrap 5</li>
+                            <li>Git / GitHub</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 reveal reveal-down">
+                <div class="col-12 reveal-content">
+                    <div
+                        class="bg-white-95 p-3 border rounded shadow-sm d-flex justify-content-around align-items-center flex-wrap">
+                        <span class="text-dark fw-bold"><i class="bi bi-people-fill me-2 text-primary"></i>TRABAJO EN
+                            EQUIPO</span>
+                        <span class="text-dark fw-bold"><i class="bi bi-lightbulb-fill me-2 text-primary"></i>LIDERAZGO
+                            TÉCNICO</span>
+                        <span class="text-dark fw-bold"><i class="bi bi-journal-check me-2 text-primary"></i>ANÁLISIS
+                            METÓDICO</span>
+                        <span class="text-dark fw-bold"><i class="bi bi-translate me-2 text-primary"></i>TOEIC
+                            INTERMEDIATE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyects" class="py-5">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h6 class="text-primary fw-bold text-uppercase ls-2">Portafolio</h6>
+                    <h2 class="display-5 fw-bold">Proyectos Destacados</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="project-card shadow-sm row g-0 border">
+                        <div class="col-md-5 project-img-container">
+                            <img src="https://picsum.photos/id/1/800/600" class="w-100 h-100 object-fit-cover"
+                                alt="AcademIQ Dashboard">
+                            <div class="project-overlay">
+                                <a href="https://github.com/fraancgz/AcademIQ---Gestion-Academica-Inteligente"
+                                    target="_blank" class="btn btn-light fw-bold rounded-pill px-4">
+                                    <i class="bi bi-github me-2"></i>Ver Repositorio
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 p-4 p-lg-5 d-flex flex-column justify-content-center">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary me-2">En Desarrollo</span>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 2026</small>
+                            </div>
+                            <h3 class="fw-bold mb-3">AcademIQ: Gestión Docente Inteligente</h3>
+                            <p class="text-secondary mb-4">
+                                Aplicación integral diseñada para ayudar a profesores a optimizar sus tiempos de
+                                desarrollo.
+                                Permite la gestión de actividades académicas, seguimiento de alumnos y organización de
+                                horarios bajo una interfaz intuitiva y robusta.
+                            </p>
+                            <div class="mb-4">
+                                <span class="badge border text-primary rounded-pill px-3 py-2 me-1 mb-1">Node.js</span>
+                                <span class="badge border text-primary rounded-pill px-3 py-2 me-1 mb-1">Express</span>
+                                <span
+                                    class="badge border text-primary rounded-pill px-3 py-2 me-1 mb-1">PostgreSQL</span>
+                                <span
+                                    class="badge border text-primary rounded-pill px-3 py-2 me-1 mb-1">Sequelize</span>
+                                <span class="badge border text-primary rounded-pill px-3 py-2 me-1 mb-1">MVC</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-10 mt-5">
+                    <div class="p-5 border-dashed border-2 text-center rounded-4 opacity-50 bg-light">
+                        <i class="bi bi-plus-circle display-4 text-muted mb-3 d-block"></i>
+                        <h4 class="text-muted">Próximo Proyecto en Camino</h4>
+                        <p class="small text-muted">Explorando nuevas soluciones con APIs REST y arquitecturas
+                            escalables.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="parallax-contact position-relative py-5">
+        <div class="parallax-overlay"></div>
+
+        <div class="container py-5 position-relative" style="z-index: 2;">
+            <div class="row g-5 align-items-center reveal reveal-down">
+                <div class="col-lg-5 text-white reveal-content">
+                    <h6 class="text-primary fw-bold text-uppercase ls-2">Conectemos</h6>
+                    <h2 class="display-5 fw-bold mb-4 text-white">¿Tienes un proyecto en mente?</h2>
+                    <p class="text-light opacity-75 mb-5">
+                        Estoy disponible para nuevas oportunidades laborales y proyectos freelance.
+                        Si buscas un Ingeniero metódico para tu equipo, hablemos.
+                    </p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="icon-box me-3 mb-0">
+                            <i class="bi bi-envelope-at-fill"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 small text-light opacity-50">Email Principal</p>
+                            <p class="fw-bold mb-0 text-white">fcocarrascog@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-box me-3 mb-0">
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 small text-light opacity-50">Perfil Profesional</p>
+                            <a href="https://www.linkedin.com/in/franciscoCarrascoG" target="_blank"
+                                class="fw-bold mb-0 text-decoration-none text-white">/in/franciscoCarrascoG</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal reveal-right">
+                    <div class="terminal-window shadow-lg reveal-content">
+                        <div class="terminal-header d-flex align-items-center p-2">
+                            <div class="terminal-buttons d-flex gap-2 ms-2">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-title mx-auto small text-secondary font-monospace">contact_details.json
+                            </div>
+                        </div>
+
+                        <div class="terminal-body p-4">
+                            <pre class="mb-0"><code class="code-json">
+<span class="token punctuation">{</span>
+  <span class="token property">"target"</span>: <span class="token string">"Francisco Carrasco"</span>,
+  <span class="token property">"role"</span>: <span class="token string">"Computer Informatics Engineer"</span>,
+  <span class="token property">"tech_stack"</span>: <span class="token punctuation">[</span><span class="token string">"Node.js"</span>, <span class="token string">"PostgreSQL"</span>, <span class="token string">"JavaScript"</span><span class="token punctuation">]</span>,
+  <span class="token property">"availability"</span>: <span class="token boolean">true</span>,
+  <span class="token property">"contact_methods"</span>: <span class="token punctuation">{</span>
+    <span class="token property">"email"</span>: <span class="token string">"<a href="mailto:fcocarrascog@gmail.com" class="code-link">fcocarrascog@gmail.com</a>"</span>,
+    <span class="token property">"linkedin"</span>: <span class="token string">"<a href="https://www.linkedin.com/in/franciscoCarrascoG" target="_blank" class="code-link">/in/franciscoCarrascoG</a>"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 border-bottom border-secondary border-opacity-25 pb-5">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4 text-white">&lt;FC.DEV/&gt;</h5>
+                    <p class="small text-white-50 pe-lg-5">
+                        Ingeniero en Informática enfocado en crear soluciones tecnológicas eficientes,
+                        combinando el análisis metódico con el desarrollo moderno.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="https://github.com/fraancgz" target="_blank" class="fs-4 footer-link"><i
+                                class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/franciscoCarrascoG" target="_blank"
+                            class="fs-4 footer-link"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4 text-white">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="footer-link">Inicio</a></li>
+                        <li class="mb-2"><a href="#about" class="footer-link">Sobre Mí</a></li>
+                        <li class="mb-2"><a href="#stack" class="footer-link">Tecnologías</a></li>
+                        <li class="mb-2"><a href="#proyects" class="footer-link">Proyectos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4 text-white">Contacto</h5>
+                    <p class="small mb-2 text-white-50"><i class="bi bi-geo-alt me-2 text-primary"></i>Región
+                        Metropolitana, Chile</p>
+                    <p class="small mb-2 text-white-50"><i
+                            class="bi bi-envelope me-2 text-primary"></i>fcocarrascog@gmail.com</p>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-white-50 mb-0">© 2026 Francisco Carrasco Gálvez. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-white-50 mb-0">Desarrollado con Bootstrap 5</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/type-writer.js"></script>
+</body>
+
+</html>

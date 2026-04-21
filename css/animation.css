@@ -1,0 +1,39 @@
+/* Efecto cursor usando guión bajo */
+.typewriter-cursor::after {
+    content: "_";
+    display: inline-block;
+    margin-left: 2px;
+    color: var(--ing-accent);
+    animation: blink-underscore 0.8s step-end infinite;
+}
+
+@keyframes blink-underscore {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* --- SISTEMA DE REVELADO DIRECCIONAL --- */
+/* El elemento padre es el sensor, se queda quieto en el layout */
+.reveal {
+    opacity: 1; /* El padre siempre es opaco para el sensor */
+    visibility: visible;
+}
+
+/* El contenido es el que tiene la animación */
+.reveal .reveal-content {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform, opacity;
+}
+
+/* Definimos las direcciones en el HIJO */
+.reveal-up .reveal-content { transform: translateY(60px); }
+.reveal-down .reveal-content { transform: translateY(-60px); }
+.reveal-left .reveal-content { transform: translateX(-60px); }
+.reveal-right .reveal-content { transform: translateX(60px); }
+
+/* Cuando el PADRE entra en el threshold de 0.4, el HIJO se muestra */
+.reveal.active .reveal-content {
+    opacity: 1;
+    transform: translate(0, 0);
+}
