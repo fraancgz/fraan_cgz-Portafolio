@@ -45,7 +45,7 @@ Este proyecto no requiere dependencias externas ni compilación.
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/fraancgz/fraan_cgz-Portafolio.git](https://github.com/fraancgz/fraan_cgz-Portafolio.git)
+    git clone https://github.com/fraancgz/fraan_cgz-Portafolio.git
     ```
 2.  **Abrir el proyecto:**
     Simplemente abre el archivo `index.html` en tu navegador favorito o utiliza la extensión **Live Server** en VS Code.
